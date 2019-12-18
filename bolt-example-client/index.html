@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
+    <title></title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <!-- Load bolt.js on your website. -->
+    <script id="bolt" src="https://sboxcheckout-static.citruspay.com/bolt/run/bolt.min.js" bolt-color="<color-
+code>" bolt-logo="<image path>"></script>
+<!-- For production 
+      <script id="bolt" src="https://checkout-static.citruspay.com/bolt/run/bolt.min.js" bolt-color="<color-
+code>" bolt-logo="<image path>"></script> -->
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="card mt-5">
+      <img
+      src="https://picsum.photos/280/320?random=4"
+      width="140"
+      height="160"
+      />
+      <h1>Tailored Jeans</h1>
+      <p class="price">$19.99</p>
+      <p>Some text about the jeans..</p>
+      <!--<div class="quantity-setter">
+        <button class="increment-btn" id="subtract" disabled>
+        -
+        </button>
+        <input type="number" id="quantity-input" min="1" value="1" />
+        <button class="increment-btn" id="add">+</button>
+      </div> -->
+      <p><button id="submit">Add to Cart</button></p>
+    </div>
+    <div id="error-message"></div>
+  </body>
+</html>
